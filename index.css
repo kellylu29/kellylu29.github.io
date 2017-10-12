@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Open+Sans:800');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+  text-align: right;
+	width: 100%;
+	margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0e0e00;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  margin: 5px;
+  padding-bottom: 15px;
+  color: #48435C;
+}
+
+nav a:hover {
+ font-weight: 900;
+}
+
+.name {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  margin: 5px;
+  padding-bottom: 15px;
+}
+
+.panel {
+  text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.one {
+  background-color: #F7F7FC;
+  margin-bottom: 400px;
+}
+
+.two {
+  background-color: #E5E5EA;
+  margin-bottom: 400px;
+}
+
+.three {
+  background-color: #D6D6DB;
+  margin-bottom: 400px;
+}
+
+.four {
+  background-color: #92D1C3;
+}
+
+.heads {
+  margin: 0;
+  padding-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: #48435C;
+}
+
+.words {
+  font-size: 1.75em;
+}
+
+.arrow {
+  width: 40px;
+}
+
+.icons {
+  width: 50px;
+  padding: 20px;
+}
