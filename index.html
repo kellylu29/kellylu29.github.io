@@ -10,29 +10,83 @@
   <body>
     <nav>
       <p class="name">Kelly Love Lu</p>
-      <a href="#two">Work</a>
+      <a href="#two">Projects</a>
       <a href="#three">Skills</a>
       <a href="#four">Contact</a>
     </nav>
 
     <section class="panel one">
      <h4 class="heads">Hello!</h4>
-     <p class="words">I am a web developer with a background in visual arts.
+     <p class="words">I am a <strong>web developer</strong> with a background in visual arts.
        <br>
        View some of my projects below!
      </p>
+     <br>
      <img src="images/arrow.png" class="arrow animated infinite pulse">
     </section>
     <section class="panel two" id="two">
-    	<h4>Projects!</h4>
+    	<h4 class="head-two">Projects</h4>
+      <div>
+        <video class="project-vid" controls>
+          <source src="videos/neat.mov">
+        </video>
+      </div>
+      <div class="project">
+        <a href="http://thatsneat.herokuapp.com/"><span class="project-title">NEAT!</span></a>
+        <p> A fun app that takes the boredom and frustration out of deciding what to eat without wasting the food that is already in one’s fridge.
+        </p>
+        <p>
+        • HTML5, CSS3, and JavaScript for the front-end elements and animations. Back-end built with Ruby on Rails
+        </p>
+        <p>
+        • Implemented a recipe API (Edamam) to fetch a random recipe using the search queries inputted by the user
+        </p>
+        <p>
+        • Sign up and sign in feature using devise and omniauth-google-oauth2 gems
+        </p>
+        <a href="http://thatsneat.herokuapp.com/">View Live</a> | <a href="https://github.com/kellylu29/neat">View on Github</a>
+      </div>
+      <hr>
+      <div>
+        <video class="project-vid" controls>
+          <source src="videos/purrpals.mov">
+        </video>
+      </div>
+      <div class="project">
+        <a href="http://tempurrarypals.herokuapp.com/users/sign_in"><span class="project-title">TemPURRary Pals</span></a>
+        <p> Rent a cat on your day off and never be lonely again.
+        </p>
+        <p>
+        • I came up with the concept for the app and collaborated with a partner during a one week sprint
+        </p>
+        <p>
+          • Built with Ruby on Rails and SQLite3
+        </p>
+        <p>
+        • Devise gem for sign in and sign up. Paperclip gem for uploading images
+        </p>
+        <a href="http://tempurrarypals.herokuapp.com/users/sign_in">View Live</a> | <a href="https://github.com/kellylu29/temPURRary_pals">View on Github</a>
+      </div>
+      <div class="more-projects">
+        <strong>Some more projects:</strong>
+        <a href="http://kellylovelu.com/jukebox/">Jukebox</a> | <a href="http://kellylovelu.com/javascript-capstone/">Word Game</a> | <a href="http://kellylovelu.com/soundcloud-api/">Soundcloud Player</a>
+      </div>
     </section>
     <section class="panel three" id="three">
     	<b>THREE</b>
     </section>
     <section class="panel four" id="four">
-    	<img src="images/git.png" class="icons">
-      <img src="images/linked.png" class="icons">
-      <img src="images/email.png" class="icons">
+      <div class="contact-icons">
+        <a href="https://github.com/kellylu29" target="_blank"><img src="images/git.png" class="icons">
+        </a>
+        <a href="https://www.linkedin.com/in/kellylu29/" target="_blank"><img src="images/linked.png" class="icons">
+        </a>
+        <a href="mailto:kellylovelu@gmail.com" target="_top"><img src="images/email.png" class="icons">
+        </a>
+      </div>
+      <div class="copyright">
+        Copyright © Kelly Lu 2017
+      </div>
     </section>
 
     <footer>
