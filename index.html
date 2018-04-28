@@ -2,116 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kelly Love Lu | Web Developer + Graphic Designer</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kelly Love Lu - Frontend Developer</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
-    <nav>
-      <p class="name">Kelly Love Lu</p>
-      <a href="#two">Projects</a>
-      <a href="#three">Skills</a>
-      <a href="#four">Contact</a>
-    </nav>
-
     <section class="panel one">
-     <h4 class="heads">Hello!</h4>
-     <p class="words">I am a <strong>web developer</strong> with a background in visual arts.
-       <br>
-       View some of my projects below!
-     </p>
-     <br>
-     <img src="images/arrow.png" class="arrow animated infinite pulse">
+      <div class="content">
+        <div class="logo-container">
+          <img class="logo animated pulse infinite" src="images/logo.png" />
+        </div>
+        <h1 class="header-name">Kelly Lu</h4>
+        <img class="love-png" src="images/love.png" />
+        <div class="links-container">
+          <a href="">Projects</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="arrow-down-container">
+          <img class="arrow-down animated pulse infinite" src="images/arrow-down.png" />
+        </div>
+      </div>
     </section>
     <section class="panel two" id="two">
-    	<h4 class="head-two">Projects</h4>
-      <div>
-        <video class="project-vid" width= "25%" controls>
-          <source src="videos/neat.mov">
-        </video>
-      </div>
-      <div class="project">
-        <a href="http://thatsneat.herokuapp.com/"><span class="project-title">NEAT!</span></a>
-        <p> A fun app that takes the boredom and frustration out of deciding what to eat without wasting the food that is already in one’s fridge.
-        </p>
-        <p>
-        • HTML5, CSS3, and JavaScript for the front-end elements and animations. Back-end built with Ruby on Rails
-        </p>
-        <p>
-        • Implemented a recipe API (Edamam) to fetch a random recipe using the search queries inputted by the user
-        </p>
-        <p>
-        • Sign up and sign in feature using devise and omniauth-google-oauth2 gems
-        </p>
-        <a href="http://thatsneat.herokuapp.com/">View Live</a> | <a href="https://github.com/kellylu29/neat">View on Github</a>
-      </div>
-      <hr>
-      <div>
-        <video class="project-vid" width= "25%" controls>
-          <source src="videos/purrpals.mov">
-        </video>
-      </div>
-      <div class="project">
-        <a href="http://tempurrarypals.herokuapp.com/users/sign_in"><span class="project-title">TemPURRary Pals</span></a>
-        <p> Rent a cat on your day off and never be lonely again.
-        </p>
-        <p>
-        • I came up with the concept for the app and collaborated with a partner during a one week sprint
-        </p>
-        <p>
-          • Built with Ruby on Rails and SQLite3
-        </p>
-        <p>
-        • Devise gem for sign in and sign up. Paperclip gem for uploading images
-        </p>
-        <a href="http://tempurrarypals.herokuapp.com/users/sign_in">View Live</a> | <a href="https://github.com/kellylu29/temPURRary_pals">View on Github</a>
-      </div>
-      <div class="more-projects">
-        <strong>Some more projects:</strong>
-        <a href="http://kellylovelu.com/jukebox/">Jukebox</a> | <a href="http://kellylovelu.com/javascript-capstone/">Word Game</a> | <a href="http://kellylovelu.com/soundcloud-api/">Soundcloud Player</a>
-      </div>
-    </section>
-    <section class="panel three" id="three">
-      <div class="skills-wrap">
-        <div class="skills">
-          <h4 class="head-three">Technical Skills</h4>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>Sass</p>
-          <p>JavaScript</p>
-          <p>Ruby</p>
-          <p>Rails</p>
-          <p>SQLite3</p>
+      <div class="content">
+        <div class="logo-container-two">
+          <img class="logo animated pulse infinite" src="images/logo.png" />
         </div>
-      	<div class="skills">
-      	  <h4 class="head-three">Design Skills</h4>
-          <p>Photoshop</p>
-          <p>Illustrator</p>
-          <p>InDesign</p>
-          <p>Sketch</p>
-          <p>Lightroom</p>
-      	</div>
-      </div>
-
-
-    </section>
-
-    <section class="panel four" id="four">
-      <div class="contact-icons">
-        <a href="https://github.com/kellylu29" target="_blank"><img src="images/git.png" class="icons">
-        </a>
-        <a href="https://www.linkedin.com/in/kellylu29/" target="_blank"><img src="images/linked.png" class="icons">
-        </a>
-        <a href="mailto:kellylovelu@gmail.com" target="_top"><img src="images/email.png" class="icons">
-        </a>
-      </div>
-      <div class="copyright">
-        Copyright © Kelly Lu 2017
+        <h3 class="header-welcome">Welcome!</h3>
+        <p>I am <span>Kelly</span>...</p>
+        <p>a <span>web developer</span> currently working for COMCAST</p>
+        <p>I <span>love</span>...</p>
+        <p>coding (especially javascript), design, illustration</p>
+        <p>fries, rice, (good) coffee and tea</p>
+        <footer>© 2018 Kelly Lu</footer>
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="javascripts/index.js"></script>
   </body>
 </html>

@@ -1,20 +1,25 @@
-window.onload = function () {
-  // init
-	var controller = new ScrollMagic.Controller({
-		globalSceneOptions: {
-			triggerHook: 'onLeave'
+window.onload = () => {
+	let scrollToFixLinks = () => {
+		let container = document.querySelector('.one');
+		let links = document.querySelector('.links-container')
+	
+		window.onscroll = (event) => {
+			if (this.pageYOffset > 445) {
+				links.classList.add('fix-position');
+			} else {
+				links.classList.remove('fix-position');
+			}
 		}
-	});
-
-	// get all slides
-	var slides = document.querySelectorAll("section.panel");
-
-	// create scene for every slide
-	for (var i=0; i<slides.length; i++) {
-		new ScrollMagic.Scene({
-				triggerElement: slides[i]
-			})
-			.setPin(slides[i])
-			.addTo(controller);
 	}
+
+	let showHiddenPage = () => {
+		let linksContainer = document.querySelector('.links-container');
+
+		linksContainer.addEventListener('click', (event) => {
+			event.preventDefault();
+		});
+	}
+
+	scrollToFixLinks();
+	showHiddenPage();
 }
