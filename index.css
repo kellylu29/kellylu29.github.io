@@ -107,12 +107,49 @@ a:hover {
   font-weight: 800;
 }
 
-footer {
+/* Projects Panel */
+
+.close button {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
   position: absolute;
-  width: 100vw;
-  color: #30247a;
-  font-size: 1rem; 
-  transform: translateY(20rem); 
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.close button:hover {
+  color: #1cdfd4;
+  transform: rotate(15deg);
+}
+
+.close button.visible {
+  display: block;
+  z-index: 9999;
+}
+
+.projects, .about, .contact {
+  display: none;
+  background-color: #232229;
+}
+
+.projects.visible, .about.visible, .contact.visible {
+  display: block;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  /* z-index: 9998; */
+  overflow: hidden;
+}
+
+.header-projects, .header-about, .header-contact {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
 }
 
 @media only screen and (max-width: 475px) {
