@@ -4,43 +4,44 @@ window.onload = () => {
 	let contact = document.querySelector('.contact');
 	let closeBtn = document.querySelector('.close button');	
 
-	let scrollToFixLinks = () => {
+	let scrollToPositionLinks = () => {
 		let container = document.querySelector('.one');
 		let links = document.querySelector('.links-container');
 	
 		window.onscroll = (event) => {
 			if (this.pageYOffset > 445) {
 				links.classList.add('fix-position');
-				projects.classList.remove('visible');
-				about.classList.remove('visible');
-				contact.classList.remove('visible');
+				removeVisibility(projects);
+				removeVisibility(about);
+				removeVisibility(contact);
+				removeVisibility(closeBtn);
 			} else {
 				links.classList.remove('fix-position');
 			}
 		}
 	}
 
-	let showHiddenPage = () => {
+	let showPopUpPage = () => {
 		let linksContainer = document.querySelector('.links-container');
 
 		linksContainer.addEventListener('click', (event) => {
 			event.preventDefault();
 
 			if (event.target.textContent === 'Projects') {
-				projects.classList.add('visible');
-				closeBtn.classList.add('visible');
+				addVisibility(projects);
+				addVisibility(closeBtn);
 				window.scrollTo(0,0);
 				hidePopUpPage(projects);				
 			}
 			if (event.target.textContent === 'About') {
-				about.classList.add('visible');
-				closeBtn.classList.add('visible');
+				addVisibility(about);
+				addVisibility(closeBtn);
 				window.scrollTo(0, 0);
 				hidePopUpPage(about);				
 			}
 			if (event.target.textContent === 'Contact') {
-				contact.classList.add('visible');
-				closeBtn.classList.add('visible');
+				addVisibility(contact);
+				addVisibility(closeBtn);
 				window.scrollTo(0, 0);
 				hidePopUpPage(contact);
 			}
@@ -49,11 +50,19 @@ window.onload = () => {
 
 	let hidePopUpPage = (element) => {
 		closeBtn.addEventListener('click', () => {
-			element.classList.remove('visible');
-			closeBtn.classList.remove('visible');
+			removeVisibility(element);
+			removeVisibility(closeBtn);
 		})
 	}
 
-	scrollToFixLinks();
-	showHiddenPage();
+	let addVisibility = (node) => {
+		node.classList.add('visible');
+	}
+
+	let removeVisibility = (node) => {
+		node.classList.remove('visible');
+	}
+
+	scrollToPositionLinks();
+	showPopUpPage();
 }

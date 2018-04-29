@@ -139,17 +139,36 @@ a:hover {
 
 .projects.visible, .about.visible, .contact.visible {
   display: block;
-  opacity: 0.95;
+  opacity: 0.97;
   position: absolute;
   top: 0;
-  /* z-index: 9998; */
   overflow: hidden;
 }
 
 .header-projects, .header-about, .header-contact {
   color: #fff;
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
+  font-size: 3.8rem;
+  letter-spacing: 0.25rem;
+}
+
+.projects p, .about p, .contact p {
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+
+.contact a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2.4rem;
+  letter-spacing: 0.25rem;
+  color: #fff;
+  padding-bottom: 0.25rem;  
+  border-bottom: 0.25rem solid #fff;  
+}
+
+.contact a:hover {
+  border-bottom: 1rem solid #1cdfd4;
 }
 
 @media only screen and (max-width: 475px) {
