@@ -9,6 +9,7 @@ window.onload = () => {
 		let links = document.querySelector('.links-container');
 	
 		window.onscroll = (event) => {
+			console.log(this.pageYOffset);
 			if (this.pageYOffset > 445) {
 				links.classList.add('fix-position');
 				removeVisibility(projects);

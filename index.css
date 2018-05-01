@@ -56,7 +56,7 @@ html, body {
 }
 
 .links-container a {
-  margin: 3rem;
+  margin: 2.4rem;
   letter-spacing: 0.25rem;
   font-size: 2.4rem;
   text-decoration: none;
@@ -74,6 +74,11 @@ a:hover {
   transform: translateY(-11rem);
 }
 
+.fix-position a{
+  color: #232229;
+  border-bottom: 0.25rem solid #232229;
+}
+
 .fix-position a:hover {
   border-bottom: 1rem solid #ed1276;
 }
@@ -89,22 +94,31 @@ a:hover {
 
 /* PG 2 */
 .two {
-  background: linear-gradient(45deg, #ed1276, #1cdfd4);
+  background: linear-gradient(45deg, #8df8f3, #fff);
   margin: 0;
 }
 
 .header-welcome {
-  color: #30247a;
+  color: #232229;
   font-size: 3rem;
 }
 
 .two p {
-  color: #30247a;
-  font-size: 2.25rem;  
+  color: #232229;
+  font-size: 2.25rem;
 }
 
-.two span {
+.bold-text {
   font-weight: 800;
+}
+
+.small-text {
+  font-size: 1.4rem;
+}
+
+.underline-text {
+  padding-bottom: 0.25rem;
+  border-bottom: 0.25rem solid #8df8f3;
 }
 
 /* Projects Panel */
@@ -147,14 +161,38 @@ a:hover {
 
 .header-projects, .header-about, .header-contact {
   color: #fff;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
   letter-spacing: 0.25rem;
 }
 
 .projects p, .about p, .contact p {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0.25rem;
+  padding: 0 2rem;
+}
+
+.proj-img-1 {
+  display: inline-block;
+  background-image: url(images/neat.png);
+  background-size: contain;
+  width: 50rem;
+  height: 27.5rem;
+}
+
+.proj-img a {
+  margin: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2.4rem;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.25rem solid #fff;
+}
+
+.contact p {
+  font-size: 2.4rem;
 }
 
 .contact a {
