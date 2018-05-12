@@ -235,6 +235,10 @@ a:hover {
   border-bottom: 0.75rem solid #1cdfd4;
 }
 
+.about-mobile {
+  display: none;
+}
+
 .contact p {
   font-size: 2.4rem;
 }
@@ -309,6 +313,12 @@ a:hover {
     padding: 4rem;
   }
 
+  .projects.visible,
+  .about.visible,
+  .contact.visible {
+    opacity: 0.99;
+  }
+
   .header-projects,
   .header-about,
   .header-contact {
@@ -341,7 +351,22 @@ a:hover {
   .proj-img-2 {
     background-size: cover;
   }
-  
+
+  .proj-img-1:active {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgb(35, 34, 41, 0.8), rgb(35, 34, 41, 0.8)), url(images/neat.png);
+  }
+
+  .proj-img-2:active {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgb(35, 34, 41, 0.8), rgb(35, 34, 41, 0.8)), url(images/t_pals.png);
+  }
+
+  .proj-img-1:active > a,
+  .proj-img-2:active > a {
+    display: block;
+  }
+
   .proj-img a {
     margin: 3.5rem;
     width: 26rem;
@@ -354,6 +379,10 @@ a:hover {
 
   .small-text {
     font-size: 2.4rem;
+  }
+
+  .about-mobile {
+    display: block;
   }
 
   .contact a {
