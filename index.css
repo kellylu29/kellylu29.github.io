@@ -253,10 +253,114 @@ a:hover {
   border-bottom: 1rem solid #1cdfd4;
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 500px) {
   .links-container a {
     margin: 2rem;
     letter-spacing: 0.25rem;
     font-size: 2rem;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 500px) {
+  .content {
+    margin-top: 25%;
+  }
+  
+  .two {
+    display: none;
+  }
+
+  .logo {
+    height: 8rem;
+  }
+
+  .header-name {
+    font-size: 10rem;
+    transform: translateY(14rem);
+  }
+
+  .love-png {
+    transform: translate(-0.5rem, 25.5rem);
+    height: 10rem;
+  }
+
+  .links-container {
+    transform: translateY(42rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links-container a {
+    margin: 5rem;
+    letter-spacing: 0.5rem;
+    font-size: 5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .arrow-down-container {
+    display: none;
+  }
+
+  .close button {
+    font-size: 7rem;
+    padding: 4rem;
+  }
+
+  .header-projects,
+  .header-about,
+  .header-contact {
+    font-size: 4.8rem;
+  }
+
+  .projects p,
+  .about p,
+  .contact p {
+    font-size: 4.8rem;
+    margin: 2rem;
+  }
+
+  .proj-wrapper {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .proj-img {
+    width: 100%;
+    height: 50rem;
+    margin: 2.5rem;
+  }
+
+  .proj-img-1 {
+    background-size: cover;
+  }
+
+  .proj-img-2 {
+    background-size: cover;
+  }
+  
+  .proj-img a {
+    margin: 3.5rem;
+    width: 26rem;
+    font-size: 4.8rem;
+  }
+
+  .projects p > a {
+    font-size: 4.8rem;
+  }
+
+  .small-text {
+    font-size: 2.4rem;
+  }
+
+  .contact a {
+    font-size: 4.8rem;
+  }
+
+  .contact p {
+    margin: 10rem;
   }
 }
