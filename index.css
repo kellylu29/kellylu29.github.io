@@ -352,21 +352,6 @@ a:hover {
     background-size: cover;
   }
 
-  .proj-img-1:active {
-    cursor: pointer;
-    background-image: linear-gradient(45deg, rgb(35, 34, 41, 0.8), rgb(35, 34, 41, 0.8)), url(images/neat.png);
-  }
-
-  .proj-img-2:active {
-    cursor: pointer;
-    background-image: linear-gradient(45deg, rgb(35, 34, 41, 0.8), rgb(35, 34, 41, 0.8)), url(images/t_pals.png);
-  }
-
-  .proj-img-1:active > a,
-  .proj-img-2:active > a {
-    display: block;
-  }
-
   .proj-img a {
     margin: 3.5rem;
     width: 26rem;
@@ -391,5 +376,14 @@ a:hover {
 
   .contact p {
     margin: 10rem;
+  }
+}
+
+@media (hover:none) {
+  .proj-img-1 > a,
+  .proj-img-2 > a {
+    display: block;
+    border: 0;
+    background-color: rgba(35, 34, 41, 0.7)
   }
 }
